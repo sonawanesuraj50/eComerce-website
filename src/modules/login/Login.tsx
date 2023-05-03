@@ -1,8 +1,8 @@
-import * as Styled from "./Styles";
-import { Formik, Form } from "formik";
 import { useSignIn } from "react-auth-kit";
 import { toast } from "react-hot-toast";
+import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import * as Styled from "./Styles";
 
 interface InitialValues {
   name: string;
