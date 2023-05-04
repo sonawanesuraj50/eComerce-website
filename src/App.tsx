@@ -14,7 +14,7 @@ const App = () => {
               <Route element={<Layout />}>
                 <Route path={Paths.home} element={<Home />} />
                 <Route path={Paths.cart} element={<Cart />} />
-                <Route path={Paths.about} element={<h1>About</h1>} />
+                <Route path={Paths.about} element={<h1>About  Page</h1>} />
                 <Route path={Paths.contact} element={<h1>Contact</h1>} />
                 <Route path={Paths.notFound} element={<h1>Not Found</h1>} />
               </Route>

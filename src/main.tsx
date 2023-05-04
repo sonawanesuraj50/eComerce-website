@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { AuthProvider } from "react-auth-kit";
-import App from "./App";
-import "./index.css";
+import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import { store } from "./logic/reducers";
-import { Toaster } from "react-hot-toast";
+import App from "./App";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
