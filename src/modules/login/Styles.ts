@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Field, ErrorMessage } from "formik";
 
 export const LoginContainer = styled.div`
@@ -82,6 +82,10 @@ export const SubmitButton = styled.button`
   border: none;
   background-color: blueviolet;
   transition: all 300ms ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
   :hover {
     cursor: pointer;
@@ -92,4 +96,23 @@ export const SubmitButton = styled.button`
 export const Error = styled(ErrorMessage)`
   color: red;
   margin-top: 5px;
+`;
+
+const rotate = keyframes`
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const LoadingSpinner = styled.div`
+  width: 16px;
+  height: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border-top-color: white;
+  opacity: 1;
+  transition: opacity 200ms;
+  animation: ${rotate} 1s linear;
+  animation-iteration-count: infinite;
+  transition-delay: 200ms;
 `;
